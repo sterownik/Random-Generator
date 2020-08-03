@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="all-content">
+        <header class="title">
+            <h2 class="title__name"><span>Generator liczb losowych <br></span>wygeneruj własne liczby losowe!</h2>
+        </header>
+        <section class="main">
+            <header class="main__title">Zaczynamy!</header>
+            <div class="container-content">
+                <div class="container-one">
+                    <p class="main__instruction">Podaj zakres liczb <br>w jakim odbędzię się losowanie:</p>
+                    <div class="main__put main__firstly">
+                        <p class="main_first-label main__label">od:</p>
+                        <input id="main_first-input" class="main__input main_first-input" value="250" max="500" min="1"
+                            type="range">
+                        <p class="main__min-first-range first-range">1</p>
+                        <p class="main__select-first-range select-range">250</p>
+                        <p class="main__max-first-range max-range">500</p>
+                    </div>
+                    <div class="main__put main__secondly">
+                        <p class="main_second-label main__label">do:</p>
+                        <input id="main_first-input" class="main__input main_second-input" value="250" max="500" min="1"
+                            type="range">
+                        <p class="main__min-second-range first-range">1</p>
+                        <p class="main__select-second-range select-range">250</p>
+                        <p class="main__max-second-range max-range">500</p>
+
+                    </div>
+                    <p class="main__info main__no-display">Zły zakres liczb</p>
+                </div>
+                <div class="container-two">
+                    <div class="main__check-how">
+                        <p class="main__title">Podaj ilość liczb, które <br> chcesz wylosować:</p>
+                        <input id="main_first-input" class="main__input main__input-how" value="50" max="100" min="1"
+                            type="range">
+                        <p class="main__min-how-range first-range">1</p>
+                        <p class="main__select-how-range select-range">50</p>
+                        <p class="main__max-how-range max-range">100</p>
+                    </div>
+                </div>
+                <div class="container-three">
+                    <label class="main__container checkbox">
+                        <input type="checkbox" class="main__checkbox" checked="checked">
+                        <span class="main__checkmark">Losuj tylko unikalne <br> liczby</span>
+                    </label>
+                </div>
+            </div>
+            <div class="main__button btn">Losuj</div>
+            <div class="main__button-show btn">Pokaż zapisane zestawy</div>
+        </section>
+        <section class="pick pick__no-display">
+            <p>Wylosowane liczby</p>
+            <div class="pick__circles">
+
+            </div>
+            <div class="pick__buttton-pick-again btn">Losuj ponownie</div>
+            <div class="pick__buttton-save btn">Zapisz zestaw</div>
+
+        </section>
+    </div>
+    <div class="set-circles">
+        <header>wylosowane zestawy
+            <span class="btn cancel">&#x2716;</span>
+
+        </header>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
